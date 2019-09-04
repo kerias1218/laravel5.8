@@ -1,3 +1,13 @@
-<h1><?= isset($greeting)?"{$greeting}":'Hello';?>
-    <?=$name?>
-</h1>
+@extends('layouts.master')
+
+@section('content')
+    @include('partials.footer')
+@endsection
+
+@section('script')
+    <script>
+
+        alert('자식뷰의 script welcome')
+    </script>
+
+@endsection
